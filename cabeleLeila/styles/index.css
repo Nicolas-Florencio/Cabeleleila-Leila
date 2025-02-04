@@ -1,0 +1,44 @@
+h2 {
+    text-align: center;
+    color: var(--vinho-profundo);
+}
+
+.framePrincipal {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoSobre {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+    font-size: 1.1rem;
+    color: var(--branco-neve);
+
+    max-width: 70vw;
+}
+
+#servicos {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+    font-size: 1.1rem;
+    color: var(--branco-neve);
+}
+
+.listaServicos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 70vw;
+}
+
+strong {
+    color: var(--vinho-profundo);
+}

@@ -1,0 +1,260 @@
+.criarAgendamento h2 {
+    color: var(--vinho-profundo);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 1rem;
+}
+
+.criarAgendamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco-neve);
+    gap: 2rem;
+    font-size: 1.1rem;
+
+    width: 100%;
+    & input {
+        color: var(--branco-neve);
+        border: 1px solid var(--vinho-profundo);
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 1rem;
+    padding-bottom: 0.5rem; 
+}
+
+.containerHorario{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    border: 2px solid var(--vinho-profundo);
+    padding: 0.5rem;
+    width: 60%;
+}
+
+.containerData {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    border: 2px solid var(--vinho-profundo);
+    padding: 0.5rem;
+    width: 60%;
+}
+
+form p a {
+    color: var(--vinho-profundo);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+    border: 2px solid var(--vinho-profundo);
+    padding: 0.5rem;
+
+    & legend {
+        text-align: center;
+        padding: 0 1rem 0 1rem;
+    }
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+#enviarBotao {
+    border: 2px solid var(--vinho-profundo);
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    color: var(--branco-neve);
+}
+
+#enviarBotao:hover {
+    border: 2px solid var(--vinho-profundo);
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    color: var(--vinho-profundo);
+    background-color: var(--branco-neve);
+}
+
+#voltarBotao {
+    border: 2px solid var(--vinho-profundo);
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    color: var(--branco-neve);
+}
+
+#voltarBotao:hover {
+    border: 2px solid var(--vinho-profundo);
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    color: var(--vinho-profundo);
+    background-color: var(--branco-neve);
+}
+
+#excluirBotao {
+    border: 2px solid var(--vinho-profundo);
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    color: var(--branco-neve);
+}
+
+#excluirBotao:hover {
+    border: 2px solid var(--branco-neve);
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    color: var(--branco-neve);
+    background-color: var(--vinho-profundo);
+}
+
+#limpar {
+    border: 2px solid var(--vinho-profundo);
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    color: var(--branco-neve);
+}
+
+#limpar:hover {
+    border: 2px solid var(--branco-neve);
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    color: var(--branco-neve);
+    background-color: var(--vinho-profundo);
+}
+
+#atualizarBotao {
+    border: 2px solid var(--vinho-profundo);
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    color: var(--branco-neve);
+}
+
+#atualizarBotao:hover {
+    border: 2px solid var(--branco-neve);
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    color: var(--branco-neve);
+    background-color: var(--verde-success);
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: var(--dourado-suave);
+    color: var(--vinho-profundo);
+}
+
+.listaAgendamentos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    min-width: 50vw;
+
+    border: 2px solid var(--vinho-profundo);
+    padding: 0.5rem;
+    color: var(--branco-neve);
+}
+
+.listaAgendamentos a{
+    font-weight: bold;
+    color: var(--branco-neve);
+}
+
+.listaAgendamentos h3, strong {
+    color: var(--vinho-profundo);
+}
+
+.agendamento {
+    display: flex;
+    gap: 1rem;
+    margin: 0 1rem 0.5rem 1rem;
+}
+
+@media (max-width: 1024px) {
+    form {
+        width: 80%;
+    }
+
+    .containerHorario {
+        width: 80%;
+    }
+
+    .listaAgendamentos {
+        min-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerHorario {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .listaAgendamentos {
+        min-width: 90%;
+    }
+
+    .agendamento {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerHorario {
+        width: 95%;
+    }
+
+    .listaAgendamentos {
+        min-width: 95%;
+    }
+}
