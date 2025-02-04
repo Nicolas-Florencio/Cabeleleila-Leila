@@ -8,7 +8,7 @@ O sistema possui dois principais níveis de acesso:
 
 1. **Administrador (Adm)**:
    - Os administradores têm permissões para acessar todas as funcionalidades do sistema, incluindo visualização de agendamentos, edição de dados, exclusão e geração de relatórios.
-   - Possuem a capacidade de gerenciar os usuários do sistema e visualizar todos os dados, com um nível de controle total.
+   - ~Possuem a capacidade de gerenciar os usuários do sistema e visualizar todos os dados, com um nível de controle total.~
 
 2. **Usuário Comum**:
    - Usuários comuns têm acesso limitado ao sistema, podendo apenas visualizar seus próprios agendamentos e informações, sem permissão para editar ou excluir dados críticos.
